@@ -1,92 +1,90 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>블로그 – 강남 셔츠룸 | 마포 힙플레이스 카페</title>
-    <meta name="description" content="브루탈리스트 감성의 마포 힙플레이스 카페, 강남 셔츠룸. 진짜 거친 분위기, 규격화된 공간에 엿먹이는 블로그 글. 전화 010-6279-0862.">
-    <meta name="keywords" content="강남 셔츠룸, 마포 카페, 힙플레이스, 브루탈리스트 카페, 블로그, 스트리트 감성, 개성 카페">
-    <meta name="author" content="SF-T3-PBN">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://sf-t3-1779642675702-162.maphoshirts.today/blog.html">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sf-t3-1779642675702-162.maphoshirts.today/blog.html">
-    <meta property="og:title" content="블로그 – 강남 셔츠룸 | 마포 힙플레이스 카페">
-    <meta property="og:description" content="브루탈리스트 감성의 마포 힙플레이스 카페, 강남 셔츠룸. 진짜 거친 분위기, 규격화된 공간에 엿먹이는 블로그 글. 전화 010-6279-0862.">
-    <meta property="og:image" content="https://sf-t3-1779642675702-162.pages.dev/assets/og-blog.jpg">
-    <style>
-        /* ===== RESET & BASE ===== */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { font-size: 16px; scroll-behavior: smooth; }
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0d0d0d; color: #e0e0e0; line-height: 1.6; }
-        /* ===== TYPOGRAPHY ===== */
-        h1, h2, h3, h4, h5, h6 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
-        h1 { font-size: 3.5rem; line-height: 0.95; margin-bottom: 0.5rem; color: #f5f5f5; background: #1a1a1a; display: inline-block; padding: 0.2rem 0.5rem; }
-        h2 { font-size: 2.2rem; margin: 2rem 0 1rem; border-left: 6px solid #ff3b30; padding-left: 1rem; }
-        h3 { font-size: 1.6rem; margin: 1.5rem 0 0.8rem; }
-        p, li, blockquote { font-size: 1.05rem; margin-bottom: 1.2rem; }
-        a { color: #ff3b30; text-decoration: none; border-bottom: 2px solid transparent; transition: border 0.2s; }
-        a:hover, a:focus { border-bottom-color: #ff3b30; }
-        strong, b { color: #ffffff; font-weight: 800; }
-        /* ===== LAYOUT : AIRY ===== */
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
-        .contain { padding: 1.5rem; }
-        /* ===== NAV ===== */
-        .nav-present { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; background: #0d0d0d; border-bottom: 2px solid #ff3b30; display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1.5rem; }
-        .nav-present .logo { font-size: 1.8rem; font-weight: 900; color: #f5f5f5; text-transform: uppercase; letter-spacing: -1px; }
-        .nav-present .logo span { color: #ff3b30; }
-        .nav-present nav { display: flex; gap: 2rem; align-items: center; }
-        .nav-present nav a { color: #c0c0c0; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; border: none; position: relative; }
-        .nav-present nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #ff3b30; transition: width 0.2s; }
-        .nav-present nav a:hover::after { width: 100%; }
-        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; }
-        .hamburger-menu span { width: 30px; height: 3px; background: #f5f5f5; margin: 4px 0; transition: 0.3s; }
-        @media (max-width: 768px) {
-            .nav-present nav { display: none; }
-            .hamburger-menu { display: flex; }
-            .nav-present.nav-open nav { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; width: 100%; background: #0d0d0d; padding: 1rem; border-bottom: 2px solid #ff3b30; }
-        }
-        /* ===== HERO / POST ===== */
-        .blog-post { padding: 6rem 0 3rem; }
-        .blog-post .meta { color: #888; font-size: 0.9rem; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 1px; }
-        .blog-post .meta span { color: #ff3b30; }
-        .blog-post blockquote { border-left: 4px solid #ff3b30; padding-left: 1.5rem; font-style: italic; color: #b0b0b0; margin: 2rem 0; }
-        .blog-post .highlight-box { background: #1a1a1a; padding: 2rem; border: 1px solid #333; margin: 2rem 0; position: relative; }
-        .blog-post .highlight-box::before { content: '▶'; position: absolute; top: -12px; left: 20px; color: #ff3b30; font-size: 1.5rem; }
-        /* ===== TEL LINK ===== */
-        .tel-link { display: inline-block; background: #ff3b30; color: #0d0d0d; font-weight: 900; padding: 0.8rem 2rem; margin: 1rem 0; border: none; text-transform: uppercase; letter-spacing: 2px; transition: background 0.2s; }
-        .tel-link:hover { background: #cc2f26; color: #fff; }
-        /* ===== FOOTER ===== */
-        footer { border-top: 2px solid #1a1a1a; padding: 2rem 1.5rem; text-align: center; font-size: 0.85rem; color: #666; }
-        footer a { color: #888; }
-        footer a:hover { color: #ff3b30; }
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            h2 { font-size: 1.8rem; }
-            .container { padding: 1rem; }
-            .blog-post { padding: 5rem 0 2rem; }
-        }
-        /* ===== JSON-LD PLACEHOLDER ===== */
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>블로그 – 강남 셔츠룸 | 마포 힙플레이스 카페</title>
+ <meta name="description" content="브루탈리스트 감성의 마포 힙플레이스 카페, 강남 셔츠룸. 진짜 거친 분위기, 규격화된 공간에 엿먹이는 블로그 글.">
+ <meta name="keywords" content="강남 셔츠룸, 마포 카페, 힙플레이스, 브루탈리스트 카페, 블로그, 스트리트 감성, 개성 카페">
+ <meta name="author" content="SF-T3-PBN">
+ <link rel="canonical" href="https://sf-t3-1779642675702-162.maphoshirts.today/blog.html">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://sf-t3-1779642675702-162.maphoshirts.today/blog.html">
+ <meta property="og:title" content="블로그 – 강남 셔츠룸 | 마포 힙플레이스 카페">
+ <meta property="og:description" content="브루탈리스트 감성의 마포 힙플레이스 카페, 강남 셔츠룸. 진짜 거친 분위기, 규격화된 공간에 엿먹이는 블로그 글.">
+ <meta property="og:image" content="https://sf-t3-1779642675702-162.pages.dev/assets/og-blog.jpg">
+ <style>
+ /* ===== RESET & BASE ===== */
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ html { font-size: 16px; scroll-behavior: smooth; }
+ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0d0d0d; color: #e0e0e0; line-height: 1.6; }
+ /* ===== TYPOGRAPHY ===== */
+ h1, h2, h3, h4, h5, h6 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+ h1 { font-size: 3.5rem; line-height: 0.95; margin-bottom: 0.5rem; color: #f5f5f5; background: #1a1a1a; display: inline-block; padding: 0.2rem 0.5rem; }
+ h2 { font-size: 2.2rem; margin: 2rem 0 1rem; border-left: 6px solid #ff3b30; padding-left: 1rem; }
+ h3 { font-size: 1.6rem; margin: 1.5rem 0 0.8rem; }
+ p, li, blockquote { font-size: 1.05rem; margin-bottom: 1.2rem; }
+ a { color: #ff3b30; text-decoration: none; border-bottom: 2px solid transparent; transition: border 0.2s; }
+ a:hover, a:focus { border-bottom-color: #ff3b30; }
+ strong, b { color: #ffffff; font-weight: 800; }
+ /* ===== LAYOUT : AIRY ===== */
+ .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+ .contain { padding: 1.5rem; }
+ /* ===== NAV ===== */
+ .nav-present { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; background: #0d0d0d; border-bottom: 2px solid #ff3b30; display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1.5rem; }
+ .nav-present .logo { font-size: 1.8rem; font-weight: 900; color: #f5f5f5; text-transform: uppercase; letter-spacing: -1px; }
+ .nav-present .logo span { color: #ff3b30; }
+ .nav-present nav { display: flex; gap: 2rem; align-items: center; }
+ .nav-present nav a { color: #c0c0c0; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; border: none; position: relative; }
+ .nav-present nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #ff3b30; transition: width 0.2s; }
+ .nav-present nav a:hover::after { width: 100%; }
+ .hamburger-menu { display: none; flex-direction: column; cursor: pointer; }
+ .hamburger-menu span { width: 30px; height: 3px; background: #f5f5f5; margin: 4px 0; transition: 0.3s; }
+ @media (max-width: 768px) {
+ .nav-present nav { display: none; }
+ .hamburger-menu { display: flex; }
+ .nav-present.nav-open nav { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; width: 100%; background: #0d0d0d; padding: 1rem; border-bottom: 2px solid #ff3b30; }
+ }
+ /* ===== HERO / POST ===== */
+ .blog-post { padding: 6rem 0 3rem; }
+ .blog-post .meta { color: #888; font-size: 0.9rem; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 1px; }
+ .blog-post .meta span { color: #ff3b30; }
+ .blog-post blockquote { border-left: 4px solid #ff3b30; padding-left: 1.5rem; font-style: italic; color: #b0b0b0; margin: 2rem 0; }
+ .blog-post .highlight-box { background: #1a1a1a; padding: 2rem; border: 1px solid #333; margin: 2rem 0; position: relative; }
+ .blog-post .highlight-box::before { content: '▶'; position: absolute; top: -12px; left: 20px; color: #ff3b30; font-size: 1.5rem; }
+ /* ===== TEL LINK ===== */
+ .tel-link { display: inline-block; background: #ff3b30; color: #0d0d0d; font-weight: 900; padding: 0.8rem 2rem; margin: 1rem 0; border: none; text-transform: uppercase; letter-spacing: 2px; transition: background 0.2s; }
+ .tel-link:hover { background: #cc2f26; color: #fff; }
+ /* ===== FOOTER ===== */
+ footer { border-top: 2px solid #1a1a1a; padding: 2rem 1.5rem; text-align: center; font-size: 0.85rem; color: #666; }
+ footer a { color: #888; }
+ footer a:hover { color: #ff3b30; }
+ /* ===== RESPONSIVE ===== */
+ @media (max-width: 768px) {
+ h1 { font-size: 2.5rem; }
+ h2 { font-size: 1.8rem; }
+ .container { padding: 1rem; }
+ .blog-post { padding: 5rem 0 2rem; }
+ }
+ /* ===== JSON-LD PLACEHOLDER ===== */
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <!-- NAV -->
-    <header class="nav-present" id="nav">
-        <div class="logo"><span>강남</span>셔츠룸</div>
-        <nav>
-            <a href="/">홈</a>
-            <a href="/menu/">메뉴</a>
-            <a href="/gallery/">갤러리</a>
-            <a href="/blog/" style="color:#ff3b30;">블로그</a>
-            <a href="/contact/">연락</a>
-        </nav>
-        <div class="hamburger-menu" onclick="document.getElementById('nav').classList.toggle('nav-open')">
-            <span></span><span></span><span></span>
-        </div>
-    </header>
+ <!-- NAV -->
+ <header class="nav-present" id="nav">
+ <div class="logo"><span>강남</span>셔츠룸</div>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/menu/">메뉴</a>
+ <a href="/gallery/">갤러리</a>
+ <a href="/blog/" style="color:#ff3b30;">블로그</a>
+ <a href="/contact/">연락</a>
+ </nav>
+ <div class="hamburger-menu" onclick="document.getElementById('nav').classList.toggle('nav-open')">
+ 
+ </div>
+ </header>
 
 <main class="container">
 <article class="blog-post">
@@ -126,7 +124,7 @@
 <p>마포에서 강남 권역으로 이동할 경우 대중교통과 자가용 모두 이용할 수 있으며, 심야 시간대에는 이동 수단을 미리 확인해두는 것이 좋습니다. 힙플레이스 카페 투어 후 강남 지역 라운지로 자리를 옮기는 동선을 계획하는 이용자도 있습니다. 초행이라면 후기보다 업소에 직접 문의해 최신 운영 정보를 확인하는 편이 정확합니다.</p>
 <h2>문의 및 예약</h2>
 <p>세부 조건과 예약 관련 문의는 아래 연락처를 통해 가능합니다.</p>
-<p class="tel-link"><a href="tel:01062790862">01062790862</a></p>
+
 </article>
 </main>
 
